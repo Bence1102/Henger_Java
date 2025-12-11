@@ -1,3 +1,5 @@
+package Model;
+
 public class Henger {
     private static int hengerDarab = 0;
     private double sugar;
@@ -6,6 +8,7 @@ public class Henger {
     public Henger(double r, double m) {
         this.sugar = r;
         this.magassag = m;
+        hengerDarab++;
     }
 
     public static int getHengerDarab(){
@@ -28,7 +31,7 @@ public class Henger {
 
     @Override
     public String toString() {
-        return "Henger{" +
+        return "Model.Henger{" +
                 "sugár=" + sugar +
                 ", magasság=" + magassag +
                 '}';

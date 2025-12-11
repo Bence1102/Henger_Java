@@ -1,4 +1,6 @@
-public class Cso extends TomorHenger{
+package Model;
+
+public class Cso extends TomorHenger {
     private double falvastagsag;
 
     public Cso(double sugar, double magassag, double fajsuly, double falvastagsag) {
@@ -7,8 +9,7 @@ public class Cso extends TomorHenger{
     }
 
     public Cso(double sugar, double magassag, double falvastagsag) {
-        super(sugar, magassag);
-        this.falvastagsag = falvastagsag;
+        this(sugar, magassag,1,falvastagsag);
     }
 
     public double getFalvastagsag() {
@@ -17,14 +18,12 @@ public class Cso extends TomorHenger{
 
     @Override
     public double terfogat() {
-        double kulso = Math.PI * Math.pow(getSugar(), 2) * getMagassag();
-        double belso = Math.PI * Math.pow(getSugar() - falvastagsag, 2) * getMagassag();
-        return kulso - belso;
+        return super.terfogat();
     }
 
     @Override
     public String toString() {
-        return "Cso{" +
+        return "Model.Cso{" +
                 "sugár=" + getSugar() +
                 ", magasság=" + getMagassag() +
                 ", falvastagság=" + falvastagsag +

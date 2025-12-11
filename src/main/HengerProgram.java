@@ -1,3 +1,9 @@
+package main;
+
+import Model.Cso;
+import Model.Henger;
+import Model.TomorHenger;
+
 import java.util.ArrayList;
 import java.util.List;
 

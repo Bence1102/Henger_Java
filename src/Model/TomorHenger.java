@@ -1,3 +1,5 @@
+package Model;
+
 public class TomorHenger extends Henger {
     private double fajsuly;
 
@@ -7,8 +9,7 @@ public class TomorHenger extends Henger {
     }
 
     public TomorHenger(double sugar, double magassag) {
-        super(sugar, magassag);
-        this.fajsuly = 1;
+        this(sugar, magassag,1);
     }
     public double getFajsuly() {
         return fajsuly;
@@ -20,7 +21,7 @@ public class TomorHenger extends Henger {
 
     @Override
     public String toString() {
-        return "TomorHenger{" +
+        return "Model.TomorHenger{" +
                 "sugár=" + getSugar() +
                 ", magasság=" + getMagassag() +
                 ", fajsúly=" + fajsuly +
