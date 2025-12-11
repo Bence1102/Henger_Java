@@ -25,15 +25,16 @@ public class Henger {
 
 
     public double terfogat(){
-        return Math.PI * sugar * magassag;
+        return Math.PI * sugar * sugar * magassag;
     }
 
 
     @Override
     public String toString() {
-        return "Model.Henger{" +
+        return "Henger{" +
                 "sugár=" + sugar +
                 ", magasság=" + magassag +
+                " térfogat=" + String.format("%.2f",terfogat()) +
                 '}';
     }
 }

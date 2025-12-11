@@ -21,10 +21,12 @@ public class TomorHenger extends Henger {
 
     @Override
     public String toString() {
-        return "Model.TomorHenger{" +
+        String os = super.toString();
+        return os+ "TomorHenger{" +
                 "sugár=" + getSugar() +
                 ", magasság=" + getMagassag() +
                 ", fajsúly=" + fajsuly +
+                " suly=" + String.format("%.2f",suly()) +
                 '}';
     }
 }

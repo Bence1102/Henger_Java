@@ -23,10 +23,12 @@ public class Cso extends TomorHenger {
 
     @Override
     public String toString() {
-        return "Model.Cso{" +
+        String os = super.toString();
+        return os+ "Cso{" +
                 "sugár=" + getSugar() +
                 ", magasság=" + getMagassag() +
                 ", falvastagság=" + falvastagsag +
+                " terfogat=" + String.format("%.2f",terfogat()) +
                 '}';
     }
 }
