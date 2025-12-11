@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="HengerProgram:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/HengerProgram_jar</output-path>
+    <root id="archive" name="HengerProgram.jar">
+      <element id="module-output" name="HengerProgram" />
+    </root>
+  </artifact>
+</component>
