@@ -15,6 +15,10 @@ public class Henger {
         return hengerDarab;
     }
 
+    protected static void HengerDarabCsokkent() {
+        Henger.hengerDarab--;
+    }
+
     public double getSugar() {
         return sugar;
     }

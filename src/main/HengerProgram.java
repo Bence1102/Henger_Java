@@ -27,17 +27,25 @@ public class HengerProgram {
         hengerek.add(cs1);
         hengerek.add(cs2);
         int db=Henger.getHengerDarab();
-        System.out.println("Felhasznált Hengerek száma:" + db);
+        System.out.printf("Felhasznált Hengerek száma(%d db):\n",db);
         for(Henger henger:hengerek){
             System.out.println(henger);
         }
-        System.out.println("\nHengerek térfogata:" + Henger.getHengerDarab());
-        System.out.println("\nHengerek átlag térfogata: " + atlagTerfogat());
-        System.out.println("\nCsövek súlya: " + csovekSulya());
+        System.out.printf("\n Hengerek átlag térfogata (%d db): " + "%.2f",db,atlagTerfogat());
+        System.out.printf("\n Csövek súlya: " + db, csovekSulya());
+        System.out.println("\n Összesen ennyi hengerből áll:" + Henger.getHengerDarab());
     }
 
     public double atlagTerfogat() {
-        return 0;
+        int db = Henger.getHengerDarab();
+        System.out.println("fv  db: " + db);
+        double terf = 0;
+        for(Henger h:hengerek){
+            terf += h.terfogat();
+        }
+        db = Henger.getHengerDarab();
+        System.out.println("fv  db: " + db);
+        return terf / db;
     }
 
     public double csovekSulya() {
