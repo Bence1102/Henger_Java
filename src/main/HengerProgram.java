@@ -28,14 +28,12 @@ public class HengerProgram {
         hengerek.add(cs2);
         int db=Henger.getHengerDarab();
         System.out.println("Felhasznált Hengerek száma:" + db);
-        /*for(Henger h:hengerek){
-            System.out.println(h);
-        }*/
-        System.out.println("Hengerek térfogata:" + Henger.getHengerDarab());
-        System.out.println("Hengerek átlag térfogata: " + atlagTerfogat());
-        System.out.println("Csövek súlya: " + csovekSulya());
-        System.out.println("\nLista:");
-        hengerek.forEach(System.out::println);
+        for(Henger henger:hengerek){
+            System.out.println(henger);
+        }
+        System.out.println("\nHengerek térfogata:" + Henger.getHengerDarab());
+        System.out.println("\nHengerek átlag térfogata: " + atlagTerfogat());
+        System.out.println("\nCsövek súlya: " + csovekSulya());
     }
 
     public double atlagTerfogat() {
